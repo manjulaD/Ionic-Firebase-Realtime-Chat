@@ -6,10 +6,15 @@ Real time chat use case using Ionic 1 and Firebase real time database
   1. setup DB name and Firebase Referance
   
      var dbName = "messages";
+     
      if (!firebase.apps.length) {
+     
        firebase.initializeApp({});
+       
      }
+     
      var ref = firebase.database().ref(dbName);
+     
     
   2. Push data to DB
   
